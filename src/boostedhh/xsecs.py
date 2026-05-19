@@ -114,7 +114,13 @@ xsecs["TbarWplusto2L2Nu"] = 2.62
 xsecs["TWminusto2L2Nu"] = 2.62
 
 # Higgs
-# SX: took XSDB NLO number (0.5246) and multiplied it by the NNLO/NLO ratio for inclusive ggH from 13 TeV
+xsecs["GluGluHTo2TauUncorrelatedDecay"] = 3.274  # 52.23* 0.0627 is 3.27       
+xsecs["VBFHTo2TauUncorrelatedDecay"] = 0.25569
+xsecs["WminusHTo2TauUncorrelatedDecay"] = 0.03534
+xsecs["WplusHTo2TauUncorrelatedDecay"] = 0.03272
+xsecs["ZHto2TauUncorrelatedDecay"] = 0.02385
+
+#SX: took XSDB NLO number (0.5246) and multiplied it by the NNLO/NLO ratio for inclusive ggH from 13 TeV
 xsecs["GluGluHto2B_PT-200_M-125"] = 0.5246 * (43.92 / 27.8) * BR_HBB
 # https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCHWG136TeVxsec_extrap (updated 2024-03 for mH=125.0)
 xsecs["GluGluHto2B_M-125"] = 52.23 * BR_HBB  # 30.34
@@ -288,9 +294,13 @@ xsecs["WtoLNu-4Jets_3J"] = 1468.0
 
 xsecs["DYto2L-4Jets_MLL-50"] = 5467.0
 xsecs["DYto2L-2Jets_MLL-50"] = 6688.0
-xsecs["DYto2L-2Jets_MLL-50_0J"] = 5378.0
-xsecs["DYto2L-2Jets_MLL-50_1J"] = 1017.0
-xsecs["DYto2L-2Jets_MLL-50_2J"] = 385.5
+xsecs["DYto2L-2Jets_MLL-50_0J"] = 5378.0*2/3 #5378.0*BR to lep only
+xsecs["DYto2L-2Jets_MLL-50_1J"] = 1017.0 * 2/3
+xsecs["DYto2L-2Jets_MLL-50_2J"] = 385.5 * 2/3
+
+xsecs["DYto2Tau-2Jets_MLL-50_0J"] =  5378.0*1/3
+xsecs["DYto2Tau-2Jets_MLL-50_1J"] =  1017.0 * 1/3
+xsecs["DYto2Tau-2Jets_MLL-50_2J"] =  385.5 * 1/3
 
 ########################################################
 # Cross Sections for 13 TeV.
