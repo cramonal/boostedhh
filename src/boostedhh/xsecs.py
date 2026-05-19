@@ -251,6 +251,7 @@ for key, value in vbfhh.items():
         tkey_nounderscore = tkey.replace("-", "_")
         tvalue = value * br
         xsecs[tkey] = tvalue
+        xsecs[tkey_nounderscore] = tvalue  # 2023/2023BPix use underscores in dir names
         xsecs[f"{tkey}_LHEweights"] = tvalue
         xsecs[f"{tkey}_TuneCP5_13p6TeV_madgraph-pythia8"] = tvalue
         xsecs[f"{tkey_nounderscore}_TuneCP5_13p6TeV_madgraph-pythia8"] = tvalue
@@ -301,6 +302,14 @@ xsecs["DYto2L-2Jets_MLL-50_2J"] = 385.5 * 2/3
 xsecs["DYto2Tau-2Jets_MLL-50_0J"] =  5378.0*1/3
 xsecs["DYto2Tau-2Jets_MLL-50_1J"] =  1017.0 * 1/3
 xsecs["DYto2Tau-2Jets_MLL-50_2J"] =  385.5 * 1/3
+
+xsecs["DYto2L-4Jets_MLL-50to120_HT-40to70"] = 316.7
+xsecs["DYto2L-4Jets_MLL-50to120_HT-70to100"] = 140.1
+xsecs["DYto2L-4Jets_MLL-50to120_HT-100to400"] = 179.6
+xsecs["DYto2L-4Jets_MLL-50to120_HT-400to800"] = 6.742
+xsecs["DYto2L-4Jets_MLL-50to120_HT-800to1500"] = 0.693
+xsecs["DYto2L-4Jets_MLL-50to120_HT-1500to2500"] = 0.05047
+xsecs["DYto2L-4Jets_MLL-50to120_HT-2500"] = 0.00346
 
 ########################################################
 # Cross Sections for 13 TeV.
