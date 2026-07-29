@@ -295,13 +295,21 @@ xsecs["WtoLNu-4Jets_3J"] = 1468.0
 
 xsecs["DYto2L-4Jets_MLL-50"] = 5467.0
 xsecs["DYto2L-2Jets_MLL-50"] = 6688.0
-xsecs["DYto2L-2Jets_MLL-50_0J"] = 5378.0*2/3 #5378.0*BR to lep only
-xsecs["DYto2L-2Jets_MLL-50_1J"] = 1017.0 * 2/3
-xsecs["DYto2L-2Jets_MLL-50_2J"] = 385.5 * 2/3
+xsecs["DYto2L-2Jets_MLL-50_0J"] = 5007.8*2/3 #5378.0*BR to lep only
+xsecs["DYto2L-2Jets_MLL-50_1J"] = 955.3 * 2/3
+xsecs["DYto2L-2Jets_MLL-50_2J"] = 368.4 * 2/3
 
-xsecs["DYto2Tau-2Jets_MLL-50_0J"] =  5378.0*1/3
-xsecs["DYto2Tau-2Jets_MLL-50_1J"] =  1017.0 * 1/3
-xsecs["DYto2Tau-2Jets_MLL-50_2J"] =  385.5 * 1/3
+xsecs["DYto2E-2Jets_MLL-50_0J"] =  5007.8 * 1/3
+xsecs["DYto2E-2Jets_MLL-50_1J"] =  955.3 * 1/3
+xsecs["DYto2E-2Jets_MLL-50_2J"] =  368.4  * 1/3
+
+xsecs["DYto2Mu-2Jets_MLL-50_0J"] =  5007.8 * 1/3
+xsecs["DYto2Mu-2Jets_MLL-50_1J"] =  955.3 * 1/3
+xsecs["DYto2Mu-2Jets_MLL-50_2J"] =  368.4  * 1/3
+
+xsecs["DYto2Tau-2Jets_MLL-50_0J"] =  5007.8*1/3
+xsecs["DYto2Tau-2Jets_MLL-50_1J"] =  955.3 * 1/3
+xsecs["DYto2Tau-2Jets_MLL-50_2J"] =  368.4 * 1/3
 
 xsecs["DYto2L-4Jets_MLL-50to120_HT-40to70"] = 316.7
 xsecs["DYto2L-4Jets_MLL-50to120_HT-70to100"] = 140.1
